@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+.pageBg{
+    background-image: url('./landing.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-header{
+    background-color: #2196f3;
+    color:#fff;
+
+}
+.logo{
+    height: 40px;
+    margin:20px;
+}
+.home-header .row{
+    padding-top: 10%;
+    padding-bottom: 15%;
+}
+.promo-text-box h1 {
+    margin-bottom: 25px;
+}
+.lead-form{
+    width: 350px;
+    background: #fff;
+    margin-top: 10px auto;
+    border-radius: 3px;
+}
+.title-box{
+    background-color: #1065b6;
+    height: 150px;
+    padding-top: 30px;
+    border-bottom-left-radius: 200px 50px;
+    border-bottom-right-radius: 200px 50px
+}
+
+form label{
+    float:left;
+    margin-left: 37px;
+    color:#999;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.input-box{
+    width:280px;
+    height: 40px;
+    padding: 0 5px;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    color:#999
+}
+/* ---------change color of placeholder--------- */
+.input-box::placeholder{
+    color:#999;
+}
+.submit-btn{
+    width: 280px;
+    height: 60px;
+    color:#fff;
+    font-weight: 600;
+    background-color: #1065b6;
+    border: none;
+    border-radius: 3px;
+    margin-top: 3px;
+    cursor:pointer;
+    margin-bottom: -30px;
+}
+
+
+
+/*
+add some text
+p::after { 
+    content: " - Remember this";
+  } */
