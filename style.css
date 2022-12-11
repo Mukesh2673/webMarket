@@ -1,34 +1,184 @@
-.popup img{
-    width: 100px;
-    height: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
-.popup{
-    width:400px;
-    background: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    padding-top: 0 30px 30px;
-    color:#333;
+:root{
+    --purple500:#281154;
+    --purple300:#270082
 }
-.popup h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin:30px 0 10px;
+html,body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color:var(--purple500);
+    /* sticky position */
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0, 0.5);
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 800;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2 ease-in;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2 ease-in;
+}
+/* background css */
+.hero-section{
+    background-image: url('./images/hero_image.png');
+    height: 100vh;
+    display: grid;
+    color:white;
+    place-items: center;
+    text-align: center;
+}
+/* space between text placed center */
+.hero-section .container{
+    display: flex;
+     flex-direction: column;
+    gap:30px
+}
+.hero-section h1{
+    font-size: 96px;
+}
+.hero-section h3{
+    font-size: 32px;
+}
+.music-section{
+    padding-top: 50px;
+    background: var(--purple500);
+
+}
+.music-section .container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.popup button {
-    width: 100%;
-    margin-top:50px;
-    padding:10px 0;
-    background: green;
-    border:0;
-    outline:none;
-    font-size:18px;
-    border-radius:4px;
-    box-shadow:0 5px 5px rgba(0,0,0,0.2)
+
+.ipad-iphone-img{
+    margin-top: -400px;
+    position:relative;
+    top:400px;
+
 }
+.primary-btn{
+    background-color: red;
+    color:white
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color:white
+}
+.about-music{
+padding-top:500px;
+display:grid;
+place-items: center;
+gap:50px;
+text-align: center;
+margin-bottom: 50px;
+}
+.video-section {
+    background-image: url(images/video.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+  }
+.video-section .container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    margin-top:-200px
+}
+.hero-section,.video-section{
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.gift-section{
+    display:flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap:50px
+}
+.gift-content{
+    display: flex;
+    flex-direction: column;
+    gap:20px
+}
+.footer-upper{
+    background-color: var(--purple300);
+    padding:20px;
+
+}
+.footer-upper .container{
+    display: flex;
+    color:white;
+    justify-content: space-between;
+}
+.footer-upper h4{
+    padding-bottom:var(--purple300);
+    border-bottom:2px solid white;
+    margin-bottom:10px
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.gift-section {
+    scroll-margin: 120px;
+  }
+  
